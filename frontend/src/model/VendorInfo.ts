@@ -3,8 +3,8 @@ export class VendorInfo{
     name?: string;
     address?:string;
     email?: string;
+    role?: string;
     contact?: string;
     password?: string;
-    userType?: string;
-    username?:string;
+    username?:string
   }

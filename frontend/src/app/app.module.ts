@@ -1,27 +1,41 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './components/customer/customer.component';
-import { CustomerSignupComponent } from './components/customer-signup/customer-signup.component';
-import { AddPolicyComponent } from './customerMods/add-policy/add-policy.component';
-import { CDashboardComponent } from './customerMods/c-dashboard/c-dashboard.component';
-import { LoginComponent } from './components/login/login.component';
+import { CustomerSignupComponent } from './auth/customer-signup/customer-signup.component';
+
+import { LoginComponent } from './auth/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { VendorComponent } from './components/vendor/vendor.component';
-import { VendorSignupComponent } from './components/vendor-signup/vendor-signup.component';
-import { VDashboardComponent } from './vendorMods/v-dashboard/v-dashboard.component';
-import { VinfoComponent } from './vendorMods/vinfo/vinfo.component';
+import { VendorComponent } from './components/vendor-modules/vendor/vendor.component';
+import { VendorSignupComponent } from './auth/vendor-signup/vendor-signup.component';
 
-import { VpolicyListComponent } from './vendorMods/vpolicy-list/vpolicy-list.component';
-import { VpolicyAddComponent } from './vendorMods/vpolicy-add/vpolicy-add.component';
-import { VprofileComponent } from './vendorMods/vprofile/vprofile.component';
-import { LandingComponent } from './home/landing/landing.component';
-
-
+import { AdminSignupComponent } from './auth/admin-signup/admin-signup.component';
+import { VendorDashboardComponent } from './components/vendor-modules/vendor-dashboard/vendor-dashboard.component';
+import { CustomerDashboardComponent } from './components/customer-modules/customer-dashboard/customer-dashboard.component';
+import { CinfoComponent } from './components/customer-modules/cinfo/cinfo.component';
+import { CustomerUpdateComponent } from './components/customer-modules/customer-update/customer-update.component';
+import { PolicyListComponent } from './components/customer-modules/policy-list/policy-list.component';
+import { PolicyAccessComponent } from './components/admin-modules/policy-access/policy-access.component';
+import { AdminInfoComponent } from './components/admin-modules/admin-info/admin-info.component';
+import { AdminDashboardComponent } from './components/admin-modules/admin-dashboard/admin-dashboard.component';
+import { VinfoComponent } from './components/vendor-modules/vinfo/vinfo.component';
+import { VpolicyAddComponent } from './components/vendor-modules/vpolicy-add/vpolicy-add.component';
+import { VpolicyListComponent } from './components/vendor-modules/vpolicy-list/vpolicy-list.component';
+import { VprofileComponent } from './components/vendor-modules/vprofile/vprofile.component';
+import { HomeComponent } from './components/home/home.component';
+import { HealthComponent } from './policies/health/health.component';
+import { LifeComponent } from './policies/life/life.component';
+import { AutoComponent } from './policies/auto/auto.component';
+import { HouseComponent } from './policies/house/house.component';
+import { VnavbarComponent } from './components/vendor-modules/vnavbar/vnavbar.component';
+import { CnavbarComponent } from './components/customer-modules/cnavbar/cnavbar.component';
+import { AnavbarComponent } from './components/admin-modules/anavbar/anavbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AllPolicyListComponent } from './components/admin-modules/all-policy-list/all-policy-list.component';
 
 
 
@@ -30,21 +44,33 @@ import { LandingComponent } from './home/landing/landing.component';
     AppComponent,
     CustomerComponent,
     CustomerSignupComponent,
-    AddPolicyComponent,
-    CDashboardComponent,
     LoginComponent,
     NavbarComponent,
     VendorComponent,
     VendorSignupComponent,
-    VDashboardComponent,
+    AdminSignupComponent,
+    VendorDashboardComponent,
+    CustomerDashboardComponent,
+    CinfoComponent,
+    CustomerUpdateComponent,
+    PolicyListComponent,
+    PolicyAccessComponent,
+    AdminInfoComponent,
+    AdminDashboardComponent,
     VinfoComponent,
-
+    VpolicyAddComponent,
     VpolicyListComponent,
-     VpolicyAddComponent,
-     VprofileComponent,
-     LandingComponent
-    
-
+    VprofileComponent,
+    HomeComponent,
+    HealthComponent,
+    LifeComponent,
+    AutoComponent,
+    HouseComponent,
+    VnavbarComponent,
+    CnavbarComponent,
+    AnavbarComponent,
+    FooterComponent,
+    AllPolicyListComponent
   ],
   imports: [
     BrowserModule,

@@ -10,5 +10,6 @@ export class CustomerInfo{
     panNo?: string;
     employerType?: string;
     employerName?: string;
+    username?:string;
     password?: string;
 }
